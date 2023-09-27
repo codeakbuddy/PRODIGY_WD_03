@@ -1,0 +1,41 @@
+<html>
+ <head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="res/tictac.css" type="text/css">
+  <script src="tictac.js"></script>
+ </head>
+<body onload="init();">
+<center>
+<br/>
+ <h1 style="margin:0 0 0 0; font-family:r1; font-size:50px; color:white; text-shadow:1px 1px 10px gold;">Tic Tac Toe</h1>
+ <br/>
+ <div id="homeP">
+  <button id="zone" onclick="showOne()"><img src="res/single.png"><br>Single Player Game<br/>.</button>
+  <br/>
+  <br/>
+  <button id="ztwo" onclick="showTwo()"><img src="res/double.png"/><br>Multi Player Game<br/>.</button>
+  <br/>
+  </div>
+	<div id="grid">
+		<canvas id = "canvas1"  width="60" height="60" style="border:3px groove black" onclick="ticTac(0,0)"></canvas>
+		<canvas id = "canvas2"  width="60" height="60" style="border:3px groove black" onclick="ticTac(0,1)"></canvas>
+		<canvas id = "canvas3"  width="60" height="60" style="border:3px groove black" onclick="ticTac(0,2)"></canvas><br />
+		<canvas id = "canvas4"  width="60" height="60" style="border:3px groove black" onclick="ticTac(1,0)"></canvas>
+		<canvas id = "canvas5"  width="60" height="60" style="border:3px groove black" onclick="ticTac(1,1)"></canvas>
+		<canvas id = "canvas6"  width="60" height="60" style="border:3px groove black" onclick="ticTac(1,2)"></canvas><br />
+		<canvas id = "canvas7"  width="60" height="60" style="border:3px groove black" onclick="ticTac(2,0)"></canvas>
+		<canvas id = "canvas8"  width="60" height="60" style="border:3px groove black" onclick="ticTac(2,1)"></canvas>
+		<canvas id = "canvas9"  width="60" height="60" style="border:3px groove black" onclick="ticTac(2,2)"></canvas>
+		<table> <tr><td>
+		</td><td><center>
+		<p id="p2"></p>
+		<br>
+		<input type="submit" value="Restart Game" onclick="init();" style="width:200px; height:50px"/>
+		<input type="submit" value="Home" onclick="location.reload();" style="width:200px; height:50px"/></center>
+		</td></tr></table>
+		<img src="res/o.png" style="visibility:hidden" id="i1" />
+		<img src="res/x.png" style="visibility:hidden" id="i2" />
+	</div>
+</center>
+</body>
+</html>

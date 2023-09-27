@@ -1,0 +1,67 @@
+@font-face
+{
+ src:url('Ranger.ttf');
+ font-family:r1;
+}
+
+html{
+ overflow:hidden;
+}
+
+input{
+	float: center;
+}
+
+body
+{
+	background-image:url('b3.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+table{
+	text-align:right;
+	border:0;
+	font-family:Courier New;
+	margin-top:-10;
+	width:90%;
+}
+iframe{
+	border:none;
+	height:650px;
+	width:60%;
+	position:fixed;
+	top:110;
+	margin-left:-277;
+}
+
+div{
+	position:absolute;
+	margin-top:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	width:99%;
+}
+
+#desc
+{
+	font-family:Cursive;
+	font-size:52px;
+	font-weight:bold;
+	margin-bottom:-175;
+}
+
+input{
+	font-family:Century Gothic;
+	font-weight:bold;
+	font-size:14px;
+}
+
+#p2{
+	font-family:Cursive;
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+}
